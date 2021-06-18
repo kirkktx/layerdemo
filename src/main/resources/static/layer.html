@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Layer application</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<form action="/layers/add" method="POST">
+  <p>Let's add a Layer.</p>
+
+  <div>
+    <label for="shortName">Short name:</label>
+    <input name="shortName" id="shortName" value="ORNL">
+  </div>
+  <div>
+    <label for="longName">Long name:</label>
+    <input name="longName" id="longName" value="Oak Ridge National Labs Parcels">
+  </div>
+  <div>
+    <button>Add layer</button>
+  </div>
+</form>
+
+
+
+<form action="/layers/list" method="GET">
+  <button>List layers</button>
+</form>
+</body>
+</html>
