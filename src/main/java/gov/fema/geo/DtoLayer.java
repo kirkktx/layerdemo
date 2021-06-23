@@ -1,7 +1,8 @@
-package gov.fema.geo;
-
-public class DtoLayer {
-    public String shortName;
-    public String longName;
-}
-
+//package gov.fema.geo;
+// deprecated
+//
+//public class DtoLayer {
+//    public String shortName;
+//    public String longName;
+//}
+//

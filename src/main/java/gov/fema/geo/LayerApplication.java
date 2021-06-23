@@ -1,5 +1,6 @@
 package gov.fema.geo;
 
+import io.swagger.v3.oas.annotations.Hidden;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,8 +17,9 @@ public class LayerApplication {
         SpringApplication.run(LayerApplication.class, args);
     }
 
-    @GetMapping("/hello2")
-    public String sayHello2(@RequestParam(value = "myName", defaultValue = "World") String name) {
+    @Hidden
+    @GetMapping("/hello")
+    public String sayHello(@RequestParam(value = "myName", defaultValue = "World") String name) {
         return String.format("Hello %s!", name);
     }
 }
